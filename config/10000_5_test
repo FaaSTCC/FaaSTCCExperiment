@@ -1,0 +1,6 @@
+[your-config]
+db_size = 100
+dag_size = 3
+zipf = 1
+tx_size = 2
+dag_name = test3

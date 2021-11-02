@@ -1,0 +1,33 @@
+#!/bin/bash
+
+cd ~
+git clone https://github.com/JRafaelSoares/FaaSTCCExperiment.git
+cd FaaSTCCExperiment
+git pull
+cd pods
+kubectl apply -f redis.yml
+kubectl apply -f mongodb.yml
+cd ..
+kubectl config set-context --current --namespace=default
+kubectl delete namespaces hydro
+kubectl create namespace hydro
+
+rm -rf ~/hydro-taras ~/hydro-cache
+# you can change ~/hydro-taras to whatever you like
+export HYDRO_HOME=~/hydro-taras
+
+mkdir $HYDRO_HOME
+cd $HYDRO_HOME
+git clone --recurse-submodules https://github.com/FaaSTCC/annaTCC.git anna
+git clone --recurse-submodules https://github.com/FaaSTCC/cacheTCC anna-cache
+git clone --recurse-submodules https://github.com/FaaSTCC/cloudburstTCC.git cloudburst
+git clone --recurse-submodules https://github.com/FaaSTCC/clusterTCC cluster
+cd
+
+export HYDRO_HOME=~/hydro-cache
+mkdir $HYDRO_HOME
+
+cd ~/FaaSTCCExperiment
+redis_ip=$(kubectl get nodes -o=jsonpath='{.items[0].status.addresses[0].address}')
+echo $redis_ip
+python3 runExperiment.py -t zipf -e 1 1.25 1.5 -r $redis_ip -p 30000 -hh ~/hydro-cache -f ~/hydro-taras

@@ -1,0 +1,323 @@
+nodes:
+- address: paranoia-7.rennes.grid5000.fr
+  port: "22"
+  internal_address: paranoia-7.rennes.grid5000.fr
+  role:
+  - controlplane
+  - etcd
+  - worker
+  hostname_override: ""
+  user: root
+  docker_socket: ""
+  ssh_key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEA66d3kXWSeSq4FqlM8n0HzmvmbLzSck3pLQk01gTJiBJChEuH
+    oxfe0o2HKEVuswD8Qb1XwAKml4+1XwkuThmp4aiF4vA6VEFT/WDeGsKLFXSm6meO
+    od9ap/vQ5JkVsCLhXWB3nfYUhLNJYTwnDrb38Fwj83Zn2aRhUtA0aWH2NoiLDFiQ
+    /k3ZzPMBmCz8wJP/RUx5Z6Te/R/B3DDPNuVHLT7ByDfokfOutURJXZxJEJcOAdF4
+    zoQ5YZ8/Xl0ibyY8s5lR5eims+fElLC2PZIn5JvT3tDQfAUvMHhbOS5tMYek3woH
+    EZ4HQOmtUinNy5Dp7ctBoTcZNhS8l/Squre2lQIDAQABAoIBAF5KiPZD9BLVfAld
+    PrO8QZZf6DhUKWShNg7WIzULf1QZ8lGbIy+oCnl3NcBwX8XyO/1V9LmYle4JC4p2
+    UvffHvFzC/dtJfm2lhPJYbWVaC9ymKMsQo8UnuKeSMxfUKVEn6ZMRjCHWVhroI3u
+    krY5keW0CJKPKyiTtHl9Y6tTDkBtB3+TNJSgLM/sBMMVyw9GVbWlMEaW3yREbbzO
+    A/T7ZgbHGmh0QoSbchkiQDEhGD/PnSQuOSMOFD1XHJbax9G8iZ8n0srUuE7hp47g
+    a7AbMHz7SgutzlEJQviu0x2R7ZKmLs0yn7Um4lM9HLRVyHPlmR7OgdgoATZ2AVjJ
+    wDL0oBUCgYEA/oLnk2BZBUMGbTfjJM+eYVIkN8Eomas1HDeqYg+7CtCrIrgf2QiJ
+    Y2pfbRUQCAcWwlW6TWXXA5430pTWINrLuvEqVGhsFRbo6krI4gwlKNNoNr3T2uof
+    BwAni16Dk4kJotBGKZM/EUTutA+bcQhOKr8BeSZ1dNr6PMuHyFMpUX8CgYEA7QhT
+    kzLQ8HVWO0sCvgz2x2Q6A9s6+Pn7Gz+QheaXxSQmCU1HQKSfmY1fZ61kEXc7bBNi
+    FVLWARnHSul05mpXpJrGNUup+PPQJ5yVcDOBoNkv39/2SqQmLcr71P6/tgyKN2fV
+    UkOf6lYmzriCvMT/eUolaqf6OK57c6L2n15rmesCgYEAhoYKgQtcAjv7GZ+An+Rd
+    gnM4UX/3RcIIwHFrzYkjBARncGKB8uVgOPvwlGedoaCdlvpZDq/VhkQKnXOt+o+r
+    P5RZG2RWPI9vbOc6ZsCko3+ahdSwNfWpkLm0LSY3xbOZNEWB0FfT7fzRbrsRHh2V
+    s2JiFPcO/kUAH0I08t2B6WECgYAYE61xmUrR8glFUpQ/u89hZ5PhCmbOHY5dMTK7
+    9zVZaBeZAEmJjm9LyKl1PY6Zm5PkoX9oDRcB2517xYUDVq/6X2JczYfBavqs22Hu
+    mLzFGuqbAgPhhxT9t82m0A2nL1Tm1dw8U/QteHzOqL1W8WfF6Tstv0xSb57ImzgT
+    7iJd6wKBgDlM1dHKB7IYFzXuYGVGxSk7dFTJlcAs5k5cIJraGf/JX7AzmZo0c9cy
+    QCVmZaGDghpkNZRhgNLG+RDyOPgb4yKKeMTrLbxOQdzJ/SCGFnYekaKjUjZGRjpL
+    UM6rZzhsoc7Gw96DSzhmy++uoknCzYNQ6CtL3aWUtEaKYud4wE+F
+    -----END RSA PRIVATE KEY-----
+  ssh_key_path: ""
+  ssh_cert: ""
+  ssh_cert_path: ""
+  labels:
+    dc: rennes
+    type: B
+  taints: []
+- address: paranoia-8.rennes.grid5000.fr
+  port: "22"
+  internal_address: paranoia-8.rennes.grid5000.fr
+  role:
+  - worker
+  hostname_override: ""
+  user: root
+  docker_socket: ""
+  ssh_key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEA66d3kXWSeSq4FqlM8n0HzmvmbLzSck3pLQk01gTJiBJChEuH
+    oxfe0o2HKEVuswD8Qb1XwAKml4+1XwkuThmp4aiF4vA6VEFT/WDeGsKLFXSm6meO
+    od9ap/vQ5JkVsCLhXWB3nfYUhLNJYTwnDrb38Fwj83Zn2aRhUtA0aWH2NoiLDFiQ
+    /k3ZzPMBmCz8wJP/RUx5Z6Te/R/B3DDPNuVHLT7ByDfokfOutURJXZxJEJcOAdF4
+    zoQ5YZ8/Xl0ibyY8s5lR5eims+fElLC2PZIn5JvT3tDQfAUvMHhbOS5tMYek3woH
+    EZ4HQOmtUinNy5Dp7ctBoTcZNhS8l/Squre2lQIDAQABAoIBAF5KiPZD9BLVfAld
+    PrO8QZZf6DhUKWShNg7WIzULf1QZ8lGbIy+oCnl3NcBwX8XyO/1V9LmYle4JC4p2
+    UvffHvFzC/dtJfm2lhPJYbWVaC9ymKMsQo8UnuKeSMxfUKVEn6ZMRjCHWVhroI3u
+    krY5keW0CJKPKyiTtHl9Y6tTDkBtB3+TNJSgLM/sBMMVyw9GVbWlMEaW3yREbbzO
+    A/T7ZgbHGmh0QoSbchkiQDEhGD/PnSQuOSMOFD1XHJbax9G8iZ8n0srUuE7hp47g
+    a7AbMHz7SgutzlEJQviu0x2R7ZKmLs0yn7Um4lM9HLRVyHPlmR7OgdgoATZ2AVjJ
+    wDL0oBUCgYEA/oLnk2BZBUMGbTfjJM+eYVIkN8Eomas1HDeqYg+7CtCrIrgf2QiJ
+    Y2pfbRUQCAcWwlW6TWXXA5430pTWINrLuvEqVGhsFRbo6krI4gwlKNNoNr3T2uof
+    BwAni16Dk4kJotBGKZM/EUTutA+bcQhOKr8BeSZ1dNr6PMuHyFMpUX8CgYEA7QhT
+    kzLQ8HVWO0sCvgz2x2Q6A9s6+Pn7Gz+QheaXxSQmCU1HQKSfmY1fZ61kEXc7bBNi
+    FVLWARnHSul05mpXpJrGNUup+PPQJ5yVcDOBoNkv39/2SqQmLcr71P6/tgyKN2fV
+    UkOf6lYmzriCvMT/eUolaqf6OK57c6L2n15rmesCgYEAhoYKgQtcAjv7GZ+An+Rd
+    gnM4UX/3RcIIwHFrzYkjBARncGKB8uVgOPvwlGedoaCdlvpZDq/VhkQKnXOt+o+r
+    P5RZG2RWPI9vbOc6ZsCko3+ahdSwNfWpkLm0LSY3xbOZNEWB0FfT7fzRbrsRHh2V
+    s2JiFPcO/kUAH0I08t2B6WECgYAYE61xmUrR8glFUpQ/u89hZ5PhCmbOHY5dMTK7
+    9zVZaBeZAEmJjm9LyKl1PY6Zm5PkoX9oDRcB2517xYUDVq/6X2JczYfBavqs22Hu
+    mLzFGuqbAgPhhxT9t82m0A2nL1Tm1dw8U/QteHzOqL1W8WfF6Tstv0xSb57ImzgT
+    7iJd6wKBgDlM1dHKB7IYFzXuYGVGxSk7dFTJlcAs5k5cIJraGf/JX7AzmZo0c9cy
+    QCVmZaGDghpkNZRhgNLG+RDyOPgb4yKKeMTrLbxOQdzJ/SCGFnYekaKjUjZGRjpL
+    UM6rZzhsoc7Gw96DSzhmy++uoknCzYNQ6CtL3aWUtEaKYud4wE+F
+    -----END RSA PRIVATE KEY-----
+  ssh_key_path: ""
+  ssh_cert: ""
+  ssh_cert_path: ""
+  labels:
+    dc: rennes
+    type: K
+  taints: []
+- address: grisou-14.nancy.grid5000.fr
+  port: "22"
+  internal_address: grisou-14.nancy.grid5000.fr
+  role:
+  - worker
+  hostname_override: ""
+  user: root
+  docker_socket: ""
+  ssh_key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEA66d3kXWSeSq4FqlM8n0HzmvmbLzSck3pLQk01gTJiBJChEuH
+    oxfe0o2HKEVuswD8Qb1XwAKml4+1XwkuThmp4aiF4vA6VEFT/WDeGsKLFXSm6meO
+    od9ap/vQ5JkVsCLhXWB3nfYUhLNJYTwnDrb38Fwj83Zn2aRhUtA0aWH2NoiLDFiQ
+    /k3ZzPMBmCz8wJP/RUx5Z6Te/R/B3DDPNuVHLT7ByDfokfOutURJXZxJEJcOAdF4
+    zoQ5YZ8/Xl0ibyY8s5lR5eims+fElLC2PZIn5JvT3tDQfAUvMHhbOS5tMYek3woH
+    EZ4HQOmtUinNy5Dp7ctBoTcZNhS8l/Squre2lQIDAQABAoIBAF5KiPZD9BLVfAld
+    PrO8QZZf6DhUKWShNg7WIzULf1QZ8lGbIy+oCnl3NcBwX8XyO/1V9LmYle4JC4p2
+    UvffHvFzC/dtJfm2lhPJYbWVaC9ymKMsQo8UnuKeSMxfUKVEn6ZMRjCHWVhroI3u
+    krY5keW0CJKPKyiTtHl9Y6tTDkBtB3+TNJSgLM/sBMMVyw9GVbWlMEaW3yREbbzO
+    A/T7ZgbHGmh0QoSbchkiQDEhGD/PnSQuOSMOFD1XHJbax9G8iZ8n0srUuE7hp47g
+    a7AbMHz7SgutzlEJQviu0x2R7ZKmLs0yn7Um4lM9HLRVyHPlmR7OgdgoATZ2AVjJ
+    wDL0oBUCgYEA/oLnk2BZBUMGbTfjJM+eYVIkN8Eomas1HDeqYg+7CtCrIrgf2QiJ
+    Y2pfbRUQCAcWwlW6TWXXA5430pTWINrLuvEqVGhsFRbo6krI4gwlKNNoNr3T2uof
+    BwAni16Dk4kJotBGKZM/EUTutA+bcQhOKr8BeSZ1dNr6PMuHyFMpUX8CgYEA7QhT
+    kzLQ8HVWO0sCvgz2x2Q6A9s6+Pn7Gz+QheaXxSQmCU1HQKSfmY1fZ61kEXc7bBNi
+    FVLWARnHSul05mpXpJrGNUup+PPQJ5yVcDOBoNkv39/2SqQmLcr71P6/tgyKN2fV
+    UkOf6lYmzriCvMT/eUolaqf6OK57c6L2n15rmesCgYEAhoYKgQtcAjv7GZ+An+Rd
+    gnM4UX/3RcIIwHFrzYkjBARncGKB8uVgOPvwlGedoaCdlvpZDq/VhkQKnXOt+o+r
+    P5RZG2RWPI9vbOc6ZsCko3+ahdSwNfWpkLm0LSY3xbOZNEWB0FfT7fzRbrsRHh2V
+    s2JiFPcO/kUAH0I08t2B6WECgYAYE61xmUrR8glFUpQ/u89hZ5PhCmbOHY5dMTK7
+    9zVZaBeZAEmJjm9LyKl1PY6Zm5PkoX9oDRcB2517xYUDVq/6X2JczYfBavqs22Hu
+    mLzFGuqbAgPhhxT9t82m0A2nL1Tm1dw8U/QteHzOqL1W8WfF6Tstv0xSb57ImzgT
+    7iJd6wKBgDlM1dHKB7IYFzXuYGVGxSk7dFTJlcAs5k5cIJraGf/JX7AzmZo0c9cy
+    QCVmZaGDghpkNZRhgNLG+RDyOPgb4yKKeMTrLbxOQdzJ/SCGFnYekaKjUjZGRjpL
+    UM6rZzhsoc7Gw96DSzhmy++uoknCzYNQ6CtL3aWUtEaKYud4wE+F
+    -----END RSA PRIVATE KEY-----
+  ssh_key_path: ""
+  ssh_cert: ""
+  ssh_cert_path: ""
+  labels:
+    dc: nancy
+    type: B
+  taints: []
+- address: grisou-16.nancy.grid5000.fr
+  port: "22"
+  internal_address: grisou-16.nancy.grid5000.fr
+  role:
+  - worker
+  hostname_override: ""
+  user: root
+  docker_socket: ""
+  ssh_key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEA66d3kXWSeSq4FqlM8n0HzmvmbLzSck3pLQk01gTJiBJChEuH
+    oxfe0o2HKEVuswD8Qb1XwAKml4+1XwkuThmp4aiF4vA6VEFT/WDeGsKLFXSm6meO
+    od9ap/vQ5JkVsCLhXWB3nfYUhLNJYTwnDrb38Fwj83Zn2aRhUtA0aWH2NoiLDFiQ
+    /k3ZzPMBmCz8wJP/RUx5Z6Te/R/B3DDPNuVHLT7ByDfokfOutURJXZxJEJcOAdF4
+    zoQ5YZ8/Xl0ibyY8s5lR5eims+fElLC2PZIn5JvT3tDQfAUvMHhbOS5tMYek3woH
+    EZ4HQOmtUinNy5Dp7ctBoTcZNhS8l/Squre2lQIDAQABAoIBAF5KiPZD9BLVfAld
+    PrO8QZZf6DhUKWShNg7WIzULf1QZ8lGbIy+oCnl3NcBwX8XyO/1V9LmYle4JC4p2
+    UvffHvFzC/dtJfm2lhPJYbWVaC9ymKMsQo8UnuKeSMxfUKVEn6ZMRjCHWVhroI3u
+    krY5keW0CJKPKyiTtHl9Y6tTDkBtB3+TNJSgLM/sBMMVyw9GVbWlMEaW3yREbbzO
+    A/T7ZgbHGmh0QoSbchkiQDEhGD/PnSQuOSMOFD1XHJbax9G8iZ8n0srUuE7hp47g
+    a7AbMHz7SgutzlEJQviu0x2R7ZKmLs0yn7Um4lM9HLRVyHPlmR7OgdgoATZ2AVjJ
+    wDL0oBUCgYEA/oLnk2BZBUMGbTfjJM+eYVIkN8Eomas1HDeqYg+7CtCrIrgf2QiJ
+    Y2pfbRUQCAcWwlW6TWXXA5430pTWINrLuvEqVGhsFRbo6krI4gwlKNNoNr3T2uof
+    BwAni16Dk4kJotBGKZM/EUTutA+bcQhOKr8BeSZ1dNr6PMuHyFMpUX8CgYEA7QhT
+    kzLQ8HVWO0sCvgz2x2Q6A9s6+Pn7Gz+QheaXxSQmCU1HQKSfmY1fZ61kEXc7bBNi
+    FVLWARnHSul05mpXpJrGNUup+PPQJ5yVcDOBoNkv39/2SqQmLcr71P6/tgyKN2fV
+    UkOf6lYmzriCvMT/eUolaqf6OK57c6L2n15rmesCgYEAhoYKgQtcAjv7GZ+An+Rd
+    gnM4UX/3RcIIwHFrzYkjBARncGKB8uVgOPvwlGedoaCdlvpZDq/VhkQKnXOt+o+r
+    P5RZG2RWPI9vbOc6ZsCko3+ahdSwNfWpkLm0LSY3xbOZNEWB0FfT7fzRbrsRHh2V
+    s2JiFPcO/kUAH0I08t2B6WECgYAYE61xmUrR8glFUpQ/u89hZ5PhCmbOHY5dMTK7
+    9zVZaBeZAEmJjm9LyKl1PY6Zm5PkoX9oDRcB2517xYUDVq/6X2JczYfBavqs22Hu
+    mLzFGuqbAgPhhxT9t82m0A2nL1Tm1dw8U/QteHzOqL1W8WfF6Tstv0xSb57ImzgT
+    7iJd6wKBgDlM1dHKB7IYFzXuYGVGxSk7dFTJlcAs5k5cIJraGf/JX7AzmZo0c9cy
+    QCVmZaGDghpkNZRhgNLG+RDyOPgb4yKKeMTrLbxOQdzJ/SCGFnYekaKjUjZGRjpL
+    UM6rZzhsoc7Gw96DSzhmy++uoknCzYNQ6CtL3aWUtEaKYud4wE+F
+    -----END RSA PRIVATE KEY-----
+  ssh_key_path: ""
+  ssh_cert: ""
+  ssh_cert_path: ""
+  labels:
+    dc: nancy
+    type: K
+  taints: []
+services:
+  etcd:
+    image: ""
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+    external_urls: []
+    ca_cert: ""
+    cert: ""
+    key: ""
+    path: ""
+    uid: 0
+    gid: 0
+    snapshot: null
+    retention: ""
+    creation: ""
+    backup_config: null
+  kube-api:
+    image: ""
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+    service_cluster_ip_range: ""
+    service_node_port_range: ""
+    pod_security_policy: false
+    always_pull_images: false
+    secrets_encryption_config: null
+    audit_log: null
+    admission_configuration: null
+    event_rate_limit: null
+  kube-controller:
+    image: ""
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+    cluster_cidr: ""
+    service_cluster_ip_range: ""
+  scheduler:
+    image: ""
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+  kubelet:
+    image: ""
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+    cluster_domain: ""
+    infra_container_image: ""
+    cluster_dns_server: ""
+    fail_swap_on: false
+    generate_serving_certificate: false
+  kubeproxy:
+    image: ""
+    extra_args: {}
+    extra_binds: []
+    extra_env: []
+network:
+  plugin: ""
+  options: {}
+  mtu: 0
+  node_selector: {}
+  update_strategy: null
+authentication:
+  strategy: ""
+  sans: []
+  webhook: null
+addons: ""
+addons_include: []
+system_images:
+  etcd: ""
+  alpine: ""
+  nginx_proxy: ""
+  cert_downloader: ""
+  kubernetes_services_sidecar: ""
+  kubedns: ""
+  dnsmasq: ""
+  kubedns_sidecar: ""
+  kubedns_autoscaler: ""
+  coredns: ""
+  coredns_autoscaler: ""
+  nodelocal: ""
+  kubernetes: ""
+  flannel: ""
+  flannel_cni: ""
+  calico_node: ""
+  calico_cni: ""
+  calico_controllers: ""
+  calico_ctl: ""
+  calico_flexvol: ""
+  canal_node: ""
+  canal_cni: ""
+  canal_flannel: ""
+  canal_flexvol: ""
+  weave_node: ""
+  weave_cni: ""
+  pod_infra_container: ""
+  ingress: ""
+  ingress_backend: ""
+  metrics_server: ""
+  windows_pod_infra_container: ""
+ssh_key_path: ""
+ssh_cert_path: ""
+ssh_agent_auth: false
+authorization:
+  mode: ""
+  options: {}
+ignore_docker_version: false
+kubernetes_version: v1.18.3-rancher2-2
+private_registries: []
+ingress:
+  provider: ""
+  options: {}
+  node_selector: {}
+  extra_args: {}
+  dns_policy: ""
+  extra_envs: []
+  extra_volumes: []
+  extra_volume_mounts: []
+  update_strategy: null
+cluster_name: ""
+cloud_provider:
+  name: ""
+prefix_path: ""
+addon_job_timeout: 0
+bastion_host:
+  address: ""
+  port: ""
+  user: ""
+  ssh_key: ""
+  ssh_key_path: ""
+  ssh_cert: ""
+  ssh_cert_path: ""
+monitoring:
+  provider: ""
+  options: {}
+  node_selector: {}
+  update_strategy: null
+  replicas: null
+restore:
+  restore: false
+  snapshot_name: ""
+dns: null
+upgrade_strategy:
+  max_unavailable_worker: ""
+  max_unavailable_controlplane: ""
+  drain: false
+  node_drain_input: null
