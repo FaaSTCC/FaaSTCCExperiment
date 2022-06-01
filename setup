@@ -1,8 +1,5 @@
 #!/bin/bash
 
-cd ~
-git clone https://github.com/JRafaelSoares/FaaSTCCExperiment.git
-cd FaaSTCCExperiment
 git pull
 cd pods
 kubectl apply -f redis.yml
@@ -12,6 +9,7 @@ kubectl config set-context --current --namespace=default
 kubectl delete namespaces hydro
 kubectl create namespace hydro
 
+kubectl create secret docker-registry regcred --namespace=hydro --docker-username=X --docker-password=X
 rm -rf ~/hydro-taras ~/hydro-cache
 # you can change ~/hydro-taras to whatever you like
 export HYDRO_HOME=~/hydro-taras

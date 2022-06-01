@@ -21,6 +21,7 @@ spec:
       containers:
       - name: master
         image: redis
+        imagePullPolicy: IfNotPresent
         resources:
           requests:
             cpu: 100m
